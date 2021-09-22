@@ -1,0 +1,20 @@
+### Create new wheaterInfo Document
+POST http://localhost:5000/api/v1/clima
+content-type: application/json
+
+{
+    "Codigo": "SCVM",
+    "Estacion": "Viña del Mar/Valparaíso",
+    "HoraUpdate": "15:00",
+    "Temp": "17",
+    "Humedad": "48",
+    "Estado": "Despejado",
+    "Icono": "despejado.png"
+}
+
+### Get all WheaterInfo Documents
+GET http://localhost:5000/api/v1/clima
+
+
+### Get an especific wheaterInfo given a code
+GET http://localhost:5000/api/v1/clima/SCVM

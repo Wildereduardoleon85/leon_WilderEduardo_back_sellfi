@@ -1,7 +1,12 @@
 import express, {Application, Request, Response} from 'express';
 import wheaterRoutes from './routes/wheater';
+import connectDB from './config/db';
 
 const app: Application = express();
+
+connectDB();
+
+app.use(express.json())
 
 app.get('/', (req: Request, res: Response) => {
     res.json({msg: "hello wordl!!"})
