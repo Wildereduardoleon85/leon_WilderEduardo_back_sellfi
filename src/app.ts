@@ -11,8 +11,6 @@ app.use(express.json())
 
 app.use('/api/v1/clima', wheaterRoutes);
 
-const __dirname = path.resolve()
-
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, '/frontend/build')))
   
@@ -25,6 +23,6 @@ if (process.env.NODE_ENV === 'production') {
     })
   }
 
-const port = process.env.PORT || 8000
+const port = process.env.PORT || 8001
 
 app.listen(port, () => console.log(`Server running on port: ${port}`))
