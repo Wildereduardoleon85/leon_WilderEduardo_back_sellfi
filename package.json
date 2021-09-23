@@ -2,11 +2,12 @@
   "name": "wheather-app",
   "version": "1.0.0",
   "description": "backend for wheater app",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node dist/app.js",
-    "dev": "nodemon src/app.ts",
-    "build": "tsc -p"
+    "start": "node ./build/app.js",
+    "dev": "nodemon ./src/app.ts",
+    "build": "tsc -p .",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
   "author": "Wilder León",
   "license": "ISC",
