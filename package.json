@@ -4,7 +4,7 @@
   "description": "backend for wheater app",
   "main": "app.js",
   "scripts": {
-    "start": "node ./build/app.js",
+    "start": "node ./dist/app.js",
     "dev": "nodemon ./src/app.ts",
     "build": "tsc -p .",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
