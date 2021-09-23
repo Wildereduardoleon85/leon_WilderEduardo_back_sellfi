@@ -1,5 +1,7 @@
 •	Descripción:
+
 Aplicación backend que contiene rutas para servir a aplicación que muestra información acerca del clima en Chile.  Contiene 3 rutas (POST) ‘api/v1/clima’ la cual sirve para crear un nuevo documento, (GET) ‘api/v1/clima’ la cual sirve para mostrar todos los documentos de la base de datos y (GET) ’api/v1/clima/:codigo’ la cual sirve para mostrar un documento en específico dado un código.
+
 •	Instrucciones para reconstruir la Aplicación:
 
 1.	Clonar repositorio.
